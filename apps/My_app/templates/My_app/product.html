@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'My_app/css/normalize.css' %}" media="screen" title="no title"  charset="utf-8">
+    <link rel="stylesheet" href="{% static 'My_app/css/skeleton.css' %}" media="screen" title="no title"  charset="utf-8">
+    <link rel="stylesheet" href="{% static 'My_app/css/additional.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+    <div>
+        <h1>{{item.item}}</h1>
+        <a href="/"><button>Home</button></a>
+        <a href="/logout"><button>logout</button></a>
+    </div>
+    <div>
+        <h5>Users who addded this product under their wish list:</h5>
+        {% if product_likes %}
+        <ul >
+            {% for user in product_likes %}
+            <li>{{ user }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+
+</body>
+</html>

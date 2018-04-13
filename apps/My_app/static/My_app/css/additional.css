@@ -1,0 +1,32 @@
+#register{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid gray;
+    padding: 25px;
+}
+#login{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid gray;
+    padding: 25px;
+}
+div{
+    vertical-align: top;
+    padding: 25px;
+}
+h1{
+    display: inline;
+    margin-right: 500px
+}
+td{
+    border: 1px solid gray;
+    padding: 15px;
+}
+td a{
+    padding: 15px;
+}
+th{ 
+    text-align: center;
+    border: 1px solid gray;
+    padding: 15px;
+}
